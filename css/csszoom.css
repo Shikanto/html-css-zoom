@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header-container{
+    height: 60px;
+}
+ 
+body{
+    background-color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#dcdcdc;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-btn{
+    text-align: right;
+    padding: 20px;
+}
+
+.btn{
+    color: white; 
+    text-decoration: none;
+    background-color: #232427;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-btn a i.fa-columns{
+    margin-right: 10px;
+}
+
+.main-container{
+    height: calc(100vh - 60px - 70px);
+    /* background-color: greenyellow; */
+    width: 100%;
+    position:relative;
+    padding:10px 0  70px;
+}
+
+.container-participant{
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    
+}
+
+.participant{
+    border: 4px solid black;
+    min-height: 150px;
+    min-width: 200px;
+    flex-shrink: 0;
+    height: calc(100% / 5);
+    width: calc(100% / 5 );
+    position: relative;
+    
+}
+.change-page{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    padding: 30px 0; 
+    color: white;
+}
+
+.switch-page-arrow{
+    color:#232427;
+    font-size: 50px;
+}
+
+.change-page-left{
+    position: absolute;
+    left:0;
+    padding-left: 15px;
+}
+
+.change-page-right{
+    position: absolute;
+    right:0;
+    padding-right: 15px;
+}
+
+.footer-container{
+    background-color: #232427;
+    height: 70px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-icone-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    position: relative;
+    
+    
+}
+
+.footer-container-chevron{
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon{
+    font-size: 30px;
+    
+}
+
+.container-footer-left, .container-footer-right, .container-footer-centre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-footer-centre div.footer-icone-text{
+    padding: 0 20px;
+}
+
+.btn-endmeeting{
+    color:#ea544c;
+    text-decoration: none;
+    text-align: center;
+}
+
+.container-footer-right{
+    background-color: #4B4C4F;
+    padding:0 15px;
+}
+
+.number-participant{
+    position: absolute;
+    top: 10px;;
+    right: 50px;
+    font-size:14px;
+}
+
+.record-chevron{
+    position: absolute;
+    font-size: 12px;
+    top:20px;
+    right:20px;
+}
+
+.share-screen-chevron{
+    margin-right: 10px;
+    margin-left:-10px
+}
+
+.participant img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-microphone{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.5);
+    padding: 4px;
+    font-weight: bold;
+}
