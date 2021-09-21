@@ -59,8 +59,12 @@ body{
     height: calc(100% / 5);
     width: calc(100% / 5 );
     position: relative;
-    
 }
+
+.participant:hover{
+    border-color: yellow;
+}
+
 .change-page{
     position: absolute;
     top:50%;
