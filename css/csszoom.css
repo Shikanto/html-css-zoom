@@ -44,7 +44,6 @@ body{
 .container-participant{
     width: 90%;
     height: 100%;
-    background-color: white;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -73,6 +72,11 @@ body{
 .switch-page-arrow{
     color:#232427;
     font-size: 50px;
+}
+
+.switch-page-arrow:hover{
+    color: rgb(41, 195, 247);
+    font-size: 70px;
 }
 
 .change-page-left{
@@ -166,4 +170,9 @@ body{
     background-color:rgba(0,0,0,0.5);
     padding: 4px;
     font-weight: bold;
+}
+
+.footer-icone-text:hover, .nav-btn a:hover{
+    background-color: #4B4C4F;
+    border-radius: 10px;
 }
