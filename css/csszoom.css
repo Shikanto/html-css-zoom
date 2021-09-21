@@ -106,8 +106,7 @@ body{
     justify-content: center;
     padding: 0 20px;
     position: relative;
-    
-    
+    height: 100%;
 }
 
 .footer-container-chevron{
@@ -117,7 +116,6 @@ body{
 
 .footer-icon{
     font-size: 30px;
-    
 }
 
 .container-footer-left, .container-footer-right, .container-footer-centre{
@@ -140,7 +138,7 @@ body{
 
 .number-participant{
     position: absolute;
-    top: 0px;
+    top: 10px;
     right: 50px;
     font-size:14px;
 }
@@ -148,13 +146,14 @@ body{
 .record-chevron{
     position: absolute;
     font-size: 12px;
-    top:20px;
-    right:25px;
+    top:25px;
+    right:20px;
 }
 
 .share-screen-chevron{
     margin-right: 10px;
-    margin-left:-10px
+    margin-left:-10px;
+    z-index: 5;
 }
 
 .participant img{
@@ -175,4 +174,8 @@ body{
 .footer-icone-text:hover, .nav-btn a:hover{
     background-color: #4B4C4F;
     border-radius: 10px;
+}
+
+.footer-icone-text .fa-upload{
+    color: limegreen;
 }
